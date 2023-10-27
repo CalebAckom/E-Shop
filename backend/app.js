@@ -7,6 +7,9 @@ const cors = require('cors');
 
 require('dotenv/config');
 
+// New Relic
+require('newrelic');
+
 // Middleware
 app.use(express.json());
 app.use(morgan('tiny'));

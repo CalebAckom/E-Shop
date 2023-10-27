@@ -4,7 +4,7 @@
   "description": "backend of the eshop",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon -r newrelic app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Caleb Poku Ackom",
@@ -13,8 +13,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.3.1",
+    "mongoose": "^7.6.3",
     "morgan": "^1.10.0",
+    "newrelic": "latest",
     "nodemon": "^2.0.22"
   }
 }
